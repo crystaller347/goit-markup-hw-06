@@ -640,11 +640,6 @@ input {
 /* Tablet team section */
 
 @media screen and (min-width: 768px) {
-  .team-section {
-    padding-left: 92px;
-    padding-right: 92px;
-  }
-
   .team-list {
     display: flex;
     flex-wrap: wrap;
