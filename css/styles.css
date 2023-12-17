@@ -340,7 +340,7 @@ input {
 
 /* Desktop header */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -463,7 +463,7 @@ input {
 
 /* Desktop solutions section */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .solutions-section {
     padding: 188px 0;
     max-width: 1440px;
@@ -551,7 +551,7 @@ input {
 
 /* Desktop benefits section */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .benefits-section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -968,10 +968,6 @@ input {
     gap: 72px 24px;
   }
 
-  .footer-tablet-list-item {
-    width: calc((100% - 24px) / 2);
-  }
-
   .footer-logo-section {
     margin-bottom: 0;
     width: 264px;
@@ -1295,7 +1291,7 @@ input {
 
 /* Backdrop desktop */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .modal {
     padding-right: 24px;
     padding-left: 24px;
