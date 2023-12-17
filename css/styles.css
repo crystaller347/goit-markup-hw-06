@@ -88,7 +88,6 @@ input {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .accent {
@@ -249,6 +248,18 @@ input {
     max-width: 768px;
   }
 
+  .mobile-menu-wrapper {
+    display: none;
+  }
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -263,7 +274,6 @@ input {
   }
 
   .nav-list {
-    color: #2e2f42;
     font-weight: 500;
     display: flex;
     gap: 40px;
@@ -326,9 +336,120 @@ input {
   .contact-details:focus {
     color: #404bbf;
   }
+}
 
-  .mobile-menu-open-btn {
-    display: none;
+/* Desktop header */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .address {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-details {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Mobile solutions section */
+
+.solutions-section {
+  background-color: #2e2f42;
+  padding: 72px 0;
+  max-width: 320px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mobile-solutions-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.solutions-title {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  max-width: 217px;
+  margin: 0 auto 72px;
+  text-transform: capitalize;
+}
+
+.solutions-button {
+  color: #fff;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-top: 0;
+  padding: 16px 32px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  line-height: 1.5;
+  height: 56px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.solutions-button:hover,
+.solutions-button:focus {
+  background-color: #404bbf;
+}
+
+/* Tablet solutions section */
+
+@media screen and (min-width: 768px) {
+  .solutions-section {
+    padding: 112px 0;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-solutions-bg.jpg);
+  }
+
+  .solutions-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+    text-transform: none;
+  }
+}
+
+/* Desktop solutions section */
+
+@media screen and (min-width: 1024px) {
+  .solutions-section {
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop-solutions-bg.jpg);
+  }
+
+  .solutions-title {
+    margin-bottom: 48px;
   }
 }
 
@@ -560,4 +681,32 @@ input {
 .form-button:hover,
 .form-button:focus {
   background-color: #404bbf;
+}
+
+/* Backdrop tablet */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding-right: 25px;
+    padding-left: 23px;
+  }
+
+  .form-title {
+    width: 360px;
+  }
+}
+
+/* Backdrop desktop */
+
+@media screen and (min-width: 1024px) {
+  .modal {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .form-input {
+    padding-left: 38px;
+  }
 }
