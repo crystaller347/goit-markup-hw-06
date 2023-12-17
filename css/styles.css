@@ -640,10 +640,6 @@ input {
 /* Tablet team section */
 
 @media screen and (min-width: 768px) {
-  .team-container {
-    max-width: 584px;
-  }
-
   .team-section {
     padding-left: 92px;
     padding-right: 92px;
@@ -661,6 +657,12 @@ input {
 
   .team-list-item:not(:last-child) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .team-container {
+    max-width: 584px;
   }
 }
 
