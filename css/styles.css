@@ -938,13 +938,14 @@ input {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 24px;
   }
 
   .footer-logo-section {
     margin-bottom: 0;
     width: 264px;
     margin-left: 108px;
+    margin-bottom: 72px;
+    margin-right: 24px;
   }
 
   .footer-logotype {
@@ -954,11 +955,13 @@ input {
   .footer-social-media {
     margin-bottom: 0;
     width: 208px;
+    margin-left: 0;
   }
 
   .subscribe-section {
     margin-left: 108px;
     margin-right: 24px;
+    margin-top: 0;
   }
 
   .subscribe-form {
